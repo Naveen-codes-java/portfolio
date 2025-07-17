@@ -1,0 +1,153 @@
+ /* === Neon Gradient Background === */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  background-size: 400% 400%;
+  animation: neonBG 15s ease infinite;
+  color: #f0f0f0;
+}
+
+/* === Header with image + text === */
+header {
+  background: transparent;
+  padding: 2em 1em;
+  text-align: center;
+  color: #00ffe0;
+  text-shadow: 1px 1px 2px #000, 0 0 5px #00ffe0;
+}
+
+/* Flex container for image and text */
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.profile-img {
+  width: 160px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00f0ff, 2px 2px 6px #000;
+}
+
+/* === Text next to profile image === */
+.text-content {
+  max-width: 600px;
+}
+a {
+  color: #00ffee; /* Change to your desired color */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  color: #00ffcc;
+  text-shadow: 2px 2px 4px #000, 0 0 6px #00ffcc;
+}
+
+/* === Contact Links === */
+.contact a, .contact span {
+  display: block;
+  margin: 0.3em 0;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px #000, 0 0 5px #0ff;
+  transition: all 0.3s ease;
+}
+
+.contact a:hover {
+  color: #0ff;
+  text-shadow: 1px 1px 3px #000, 0 0 10px #0ff;
+  transform: translateX(5px);
+}
+
+/* === Sections with subtle glass effect === */
+section {
+  padding: 2em;
+  margin: 1em;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1), 2px 2px 6px #000;
+}
+
+/* Headings with subtle neon and black outline */
+h2 {
+  color: #0ff;
+  text-shadow: 1px 1px 3px #000, 0 0 5px #0ff;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 1.5em;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background: rgba(0, 0, 0, 0.5);
+  color: #0ff;
+  text-shadow: 1px 1px 2px #000, 0 0 5px #0ff;
+}
+
+/* === Background Animation Keyframes === */
+@keyframes neonBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.certifications {
+  padding: 2em;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin: 1em;
+  overflow: hidden;
+  color: #0ff;
+  text-shadow: 1px 1px 2px #000, 0 0 5px #0ff;
+}
+
+.marquee {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 540px; /* Adjust based on image height */
+}
+
+.marquee-content {
+  display: flex;
+  animation: scroll-left -95s linear infinite;
+  gap: 30px;
+}
+
+.marquee-content img {
+  height: 450px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00ffee, 2px 2px 6px #000;
+  transition: transform 0.3s;
+}
+
+.marquee-content img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #0ff, 0 0 25px #0ff;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
